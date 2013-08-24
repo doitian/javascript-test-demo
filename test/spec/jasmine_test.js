@@ -34,33 +34,34 @@
     });
   });
   // 1.3 way
-  describe('Async Test', function () {
-    var a, b;
-    beforeEach(function() {
-      done = false;
-      runs(function() {
-        setTimeout(function() {
-          a = 1;
-          b = 1;
-          done = true;
-        }, 500);
-      });
-      waitsFor(function() { return done; });
-    });
-    it('passes' , function(done) {
-      done = true
-      result = null;
+  // describe('Async Test', function () {
+  //   var a, b;
+  //   beforeEach(function() {
+  //     done = false;
+  //     runs(function() {
+  //       setTimeout(function() {
+  //         a = 1;
+  //         b = 1;
+  //         done = true;
+  //       }, 500);
+  //     });
+  //     waitsFor(function() { return done; });
+  //   });
+  //   it('passes' , function(done) {
+  //     done = true
+  //     result = null;
 
-      runs(function() {
-        setTimeout(function() {
-          result = a + b;
-          done = true;
-        }, 500);
-      });
-      waitsFor(function() { return done; });
+  //     runs(function() {
+  //       setTimeout(function() {
+  //         result = a + b;
+  //         done = true;
+  //       }, 500);
+  //     });
+  //     waitsFor(function() { return done; });
 
-      runs(function() {
-        expect(result).toEqual(2);
-      });
-  });
+  //     runs(function() {
+  //       expect(result).toEqual(2);
+  //     });
+  //   });
+  // });
 })();
