@@ -8,7 +8,10 @@
 <body>
     <div id="mocha"></div>
     <script src="lib/mocha/mocha.js"></script>
-    <script>mocha.setup('bdd')</script>
+    <script>
+      mocha.setup('bdd');
+      mocha.bail(false);
+    </script>
     <!-- assertion framework -->
     <script src="lib/chai.js"></script>
     <script>var expect = chai.expect</script>
@@ -16,8 +19,10 @@
     <!-- include source files here... -->
 
     <!-- include spec files here... -->
-    <script src="spec/test.js"></script>
+    <script src="spec/mocha_test.js"></script>
 
-    <script>mocha.run()</script>
+    <script>
+      mocha.run();
+    </script>
 </body>
 </html>
