@@ -1,0 +1,8 @@
+{
+  "framework": "mocha",
+  "src_files": [
+    "test/lib/chai.js",
+    "test/mocha_setup.js",
+    "test/spec/mocha_test.js"
+  ]
+}
