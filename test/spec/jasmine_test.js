@@ -37,7 +37,7 @@
   // describe('Async Test', function () {
   //   var a, b;
   //   beforeEach(function() {
-  //     done = false;
+  //     var done = false;
   //     runs(function() {
   //       setTimeout(function() {
   //         a = 1;
@@ -48,8 +48,8 @@
   //     waitsFor(function() { return done; });
   //   });
   //   it('passes' , function(done) {
-  //     done = true
-  //     result = null;
+  //     var done = true;
+  //     var result = null;
 
   //     runs(function() {
   //       setTimeout(function() {
